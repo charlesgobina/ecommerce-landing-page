@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProductDescription.css';
 
 const ProductDescription = () => (
   <div className="product-description">
