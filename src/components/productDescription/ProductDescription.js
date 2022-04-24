@@ -2,6 +2,7 @@ import React from 'react';
 import './ProductDescription.css';
 import { ReactComponent as IconMinus } from '../../images/icon-minus.svg';
 import { ReactComponent as IconPlus } from '../../images/icon-plus.svg';
+import { ReactComponent as IconCart } from '../../images/icon-cart.svg';
 
 const ProductDescription = () => (
   <section className="productDescription">
@@ -23,12 +24,19 @@ const ProductDescription = () => (
       </div>
     </div>
     <div className="productQuantity">
-      <IconMinus />
+      <button type="button" className="quantityBtn quantityBtnMinus">
+        <IconMinus className="quantityBtnMinus" />
+      </button>
       <input type="number" name="quantity" min="1" max="10" />
-      <IconPlus />
+      <button type="button" className="quantityBtn quantityBtnPlus">
+        <IconPlus className="quantityBtnPlus" />
+      </button>
     </div>
     <div className="productButton">
-      <button type="button">Add to cart</button>
+      <button className="productButton" type="button">
+        <IconCart id="cartBtn" />
+        <span>Add to cart</span>
+      </button>
     </div>
   </section>
 );
