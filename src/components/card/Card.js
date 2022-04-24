@@ -9,8 +9,12 @@ const Card = () => (
     <div className="cardBody">
       <div className="cardImage">
         <img src={sneakerOne} alt="sneaker" />
-        <IconNext className="cardIconNext" />
-        <IconPrevious className="cardIconPrevious" />
+        <button type="button" className="cardButton cardIconNext">
+          <IconNext />
+        </button>
+        <button type="button" className="cardButton cardIconPrevious">
+          <IconPrevious />
+        </button>
       </div>
     </div>
   </div>
