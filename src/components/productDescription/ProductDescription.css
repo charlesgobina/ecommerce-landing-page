@@ -1,3 +1,141 @@
 * {
   background-color: #fff;
 }
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.productDescription > h4 {
+  align-self: flex-start;
+  text-transform: uppercase;
+  font: 500 1rem 'Kumbh Sans', sans-serif;
+  color: #f97d1c;
+}
+
+.productDescription > h2 {
+  align-self: flex-start;
+  text-transform: capitalize;
+  font: 700 2rem 'Kumbh Sans', sans-serif;
+  text-align: left;
+}
+
+.productDescription > p {
+  align-self: flex-start;
+  font: 400 1rem 'Kumbh Sans', sans-serif;
+  text-align: left;
+  color: #717982;
+}
+
+.productDescription > .productPrice {
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productPrice > .productPriceNew {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.productPrice > .productPriceNew > .newPrice {
+  font: 700 2rem 'Kumbh Sans', sans-serif;
+}
+
+.productPrice > .productPriceNew > .pricePercentage {
+  font: 700 1rem 'Kumbh Sans', sans-serif;
+  background-color: #feede0;
+  color: #f97d1c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.productPrice > .productPriceOld > .oldPrice {
+  font: 700 1rem 'Kumbh Sans', sans-serif;
+  color: #71798291;
+  text-decoration: line-through;
+}
+
+.productDescription > .productQuantity {
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productDescription > .productQuantity > input {
+  width: 90%;
+  height: 60px;
+  padding: 0 10px;
+  font: 400 1rem 'Kumbh Sans', sans-serif;
+  color: #717982;
+  border: none;
+  outline: none;
+  background-color: #f7f8fd;
+  text-align: center;
+}
+
+.productDescription > .productQuantity > .quantityBtn {
+  background-color: #f7f8fd;
+  padding: 0 10px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+
+.productDescription > .productQuantity > .quantityBtnPlus {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.productDescription > .productQuantity > .quantityBtnMinus {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.productDescription > .productButton {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.productButton > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #f97d1c;
+  color: #fff;
+  font: 700 1rem 'Kumbh Sans', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button > #cartBtn {
+  background-color: transparent;
+  color: #fff;
+}
+
+button > span {
+  background-color: transparent;
+}

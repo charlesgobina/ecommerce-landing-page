@@ -13,17 +13,29 @@
 
 .cardIconNext {
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 45%;
+  right: -5px;
   margin-right: 15px;
   background-color: #fff;
   border-radius: 20px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
 }
 
 .cardIconPrevious {
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 45%;
+  left: -5px;
   margin-left: 15px;
   background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: none;
 }
