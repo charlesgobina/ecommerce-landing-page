@@ -1,10 +1,4 @@
-.card > .cardBody > .cardImage {
-  max-width: 100%;
-  max-height: 80%;
-  position: relative;
-}
-
-.cardImage img {
+.card > img {
   width: 100%;
   max-height: 290px;
   object-fit: cover;
@@ -38,4 +32,40 @@
   text-align: center;
   outline: none;
   border: none;
+}
+
+.carousel .control-next.control-arrow {
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.carousel .control-prev.control-arrow {
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.carousel .control-next.control-arrow::before {
+  content: url(../../images/icon-next.svg);
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  outline: none;
+  border: none;
+  opacity: 1;
+}
+
+.carousel .control-prev.control-arrow::before {
+  content: url(../../images/icon-previous.svg);
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+  opacity: 1;
 }
