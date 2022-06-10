@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import logger from 'redux-logger';
-import itemReducer from './store';
+import itemReducer from './sneakStore';
 
 const reducer = combineReducers({
   itemReducer,

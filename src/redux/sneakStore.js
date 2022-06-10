@@ -9,7 +9,7 @@ export const addItem = (payload) => ({
 
 const reducer = (state = initialState, action) => {
   if (action.type === ADD_ITEM) {
-    return [...state];
+    return [...state, action.payload];
   }
   return null;
 };
