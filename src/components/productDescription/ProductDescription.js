@@ -1,19 +1,36 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import './ProductDescription.css';
 import { ReactComponent as IconMinus } from '../../images/icon-minus.svg';
 import { ReactComponent as IconPlus } from '../../images/icon-plus.svg';
 import { ReactComponent as IconCart } from '../../images/icon-cart.svg';
+import image from '../../images/image-product-1-thumbnail.jpg';
+import { addItem } from '../../redux/sneakStore';
 
 const ProductDescription = () => {
-  const [increase, setIncrease] = useState(0);
-  // const [decrease, setDecrease] = useState(0);
+  const [increase, setIncrease] = useState({
+    title: 'Fall Limited edition trainers',
+    quantity: 1,
+    price: 125,
+    oldPrice: 250,
+    imageUrl: image,
+  });
+  const dispatch = useDispatch();
 
   const increment = () => {
-    setIncrease((prev) => prev + 1);
+    if (increase.quantity >= 0) {
+      setIncrease({ ...increase, quantity: increase.quantity + 1 });
+    }
   };
 
   const decrement = () => {
-    setIncrease((prev) => prev - 1);
+    if (increase.quantity !== 1) {
+      setIncrease({ ...increase, quantity: increase.quantity - 1 });
+    }
+  };
+
+  const addToCart = () => {
+    dispatch(addItem(increase));
   };
 
   return (
@@ -39,13 +56,13 @@ const ProductDescription = () => {
         <button type="button" className="quantityBtn quantityBtnMinus">
           <IconMinus onClick={decrement} className="quantityBtnMinus" />
         </button>
-        <input value={increase} type="number" name="quantity" minimum="0" min="1" max="10" />
+        <span>{increase.quantity}</span>
         <button type="button" className="quantityBtn quantityBtnPlus">
           <IconPlus onClick={increment} className="quantityBtnPlus" />
         </button>
       </div>
       <div className="productButton">
-        <button className="productButton" type="button">
+        <button onClick={addToCart} className="productButton" type="button">
           <IconCart id="cartBtn" />
           <span>Add to cart</span>
         </button>

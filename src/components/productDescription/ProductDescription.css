@@ -76,10 +76,14 @@
   align-items: center;
 }
 
-.productDescription > .productQuantity > input {
+button > span {
+  background-color: transparent;
+}
+
+.productDescription > .productQuantity > span {
   width: 90%;
   height: 60px;
-  padding: 0 10px;
+  padding: 20px 10px;
   font: 400 1rem 'Kumbh Sans', sans-serif;
   color: #717982;
   border: none;
@@ -134,8 +138,4 @@
 button > #cartBtn {
   background-color: transparent;
   color: #fff;
-}
-
-button > span {
-  background-color: transparent;
 }
