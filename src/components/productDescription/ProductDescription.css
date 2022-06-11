@@ -76,6 +76,10 @@
   align-items: center;
 }
 
+button > span {
+  background-color: transparent;
+}
+
 .productDescription > .productQuantity > span {
   width: 90%;
   height: 60px;
@@ -134,8 +138,4 @@
 button > #cartBtn {
   background-color: transparent;
   color: #fff;
-}
-
-button > span {
-  background-color: transparent;
 }
