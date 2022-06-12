@@ -24,7 +24,6 @@
 
 .division {
   display: flex;
-  gap: 5px;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
@@ -33,7 +32,6 @@
 
 .divisionTwo {
   display: flex;
-  gap: 5px;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
