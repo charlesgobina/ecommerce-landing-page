@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Card from './components/card/Card';
 import ProductDescription from './components/productDescription/ProductDescription';
+import CartContainer from './components/CartContainer/CartContainer';
 import './App.css';
 
 const App = () => (
@@ -9,6 +10,7 @@ const App = () => (
     <Header />
     <Card />
     <ProductDescription />
+    <CartContainer />
   </div>
 );
 
