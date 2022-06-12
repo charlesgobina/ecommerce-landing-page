@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import './ProductDescription.css';
 import { ReactComponent as IconMinus } from '../../images/icon-minus.svg';
 import { ReactComponent as IconPlus } from '../../images/icon-plus.svg';
 import { ReactComponent as IconCart } from '../../images/icon-cart.svg';
 import image from '../../images/image-product-1-thumbnail.jpg';
-import { addItem } from '../../redux/sneakStore';
+import { addItem, showMessage } from '../../redux/sneakStore';
 
 const ProductDescription = () => {
   const [increase, setIncrease] = useState({
+    id: '',
     title: 'Fall Limited edition trainers',
     quantity: 1,
     price: 125,
@@ -30,7 +32,8 @@ const ProductDescription = () => {
   };
 
   const addToCart = () => {
-    dispatch(addItem(increase));
+    dispatch(addItem({ ...increase, id: uuidv4() }));
+    dispatch(showMessage(true));
   };
 
   return (

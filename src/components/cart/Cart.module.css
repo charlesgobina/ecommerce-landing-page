@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap');
+
+.cartModal {
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dFlex {
+  display: flex;
+  gap: 5px;
+}
+
+.dFlexPrice {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.division {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divisionTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cartImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.cartHeadingTwo {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.cartPrice {
+  align-self: flex-start;
+}
+
+.cartHeading {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.cartSubmit {
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #f97d1c;
+  color: #fff;
+  font: 700 1rem 'Kumbh Sans', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+}

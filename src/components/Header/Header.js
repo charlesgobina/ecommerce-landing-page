@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as MenuIcon } from '../../images/icon-menu.svg';
-import { ReactComponent as Cart } from '../../images/icon-cart.svg';
+import CartButton from '../CartButton/CartButton';
 import { ReactComponent as SneakerLogo } from '../../images/logo.svg';
 import avatar from '../../images/image-avatar.png';
 import './Header.css';
@@ -21,7 +21,7 @@ const Header = () => (
       </ul>
       <ul className="headerProfile">
         <li>
-          <Cart />
+          <CartButton />
         </li>
         <li>
           <img src={avatar} alt="avatar" />
