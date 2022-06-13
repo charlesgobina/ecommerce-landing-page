@@ -6,7 +6,7 @@
   transition: all 0.2s;
   font-weight: 600 !important;
   text-shadow: 1px 1px 2px #feede0;
-  animation: 
+  animation:
     scaleOut 0.2s,
     scaleIn 0.2s 2s;
 }
