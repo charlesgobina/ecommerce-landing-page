@@ -1,38 +1,47 @@
 import { v4 as uuidv4 } from 'uuid';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import style from './Cart.module.css';
 
-const Cart = (props) => {
-  const {
-    title, quantity, price, imageUrl,
-  } = props;
-  return (
-    <section className={style.cartModal}>
-      <h1 className={style.cartHeading}>Cart</h1>
-      <div className={style.division}>
-        <div className={style.divisionTwo}>
-          <div className={style.dFlex}>
-            <img className={style.cartImage} src={imageUrl} alt={`sneaker-${uuidv4()}`} />
-            <div className={style.dFlexPrice}>
-              <h2 className={style.cartHeadingTwo}>{title}</h2>
-              <span className={style.cartPrice}>{`${price} x ${quantity} = ${price * quantity}`}</span>
-            </div>
-          </div>
-          <p className="cartDelete">delete</p>
-        </div>
-      </div>
-      <button className={style.cartSubmit} type="button">
-        Checkout
-      </button>
-    </section>
-  );
-};
+const Cart = () => {
+  const items = useSelector((state) => state.itemReducer.item);
 
-Cart.propTypes = {
-  title: PropTypes.string.isRequired,
-  quantity: PropTypes.number.isRequired,
-  price: PropTypes.number.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  return (
+    <>
+      {
+        items && items.length === 0
+          ? (
+            <section className={style.cartModal}>
+              <h1 className={style.cartHeading}>Cart</h1>
+              <div className={style.division}>
+                <h2 className={style.cartHeadingThree}>Your Cart is Empty</h2>
+              </div>
+            </section>
+          )
+          : (
+            <section className={style.cartModal}>
+              <h1 className={style.cartHeading}>Cart</h1>
+              <div className={style.division}>
+                { items.map((item) => (
+                  <div key={uuidv4()} className={style.divisionTwo}>
+                    <div className={style.dFlex}>
+                      <img className={style.cartImage} src={item.imageUrl} alt={`sneaker-${uuidv4()}`} />
+                      <div className={style.dFlexPrice}>
+                        <h2 className={style.cartHeadingTwo}>{item.title}</h2>
+                        <span className={style.cartPrice}>{`$${item.price} x ${item.quantity} = $${item.price * item.quantity}`}</span>
+                      </div>
+                    </div>
+                    <p className={style.cartDelete}>delete</p>
+                  </div>
+                ))}
+              </div>
+              <button className={style.cartSubmit} type="button">
+                Checkout
+              </button>
+            </section>
+          )
+      }
+    </>
+  );
 };
 
 export default Cart;
