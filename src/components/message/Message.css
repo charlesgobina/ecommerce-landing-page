@@ -1,0 +1,32 @@
+.messager {
+  text-align: center !important;
+  padding: 10px 0 !important;
+  width: 100%;
+  color: #f97d1c !important;
+  transition: all 0.2s;
+  font-weight: 600 !important;
+  text-shadow: 1px 1px 2px #feede0;
+  animation: 
+    scaleOut 0.2s,
+    scaleIn 0.2s 2s;
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
