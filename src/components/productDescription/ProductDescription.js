@@ -6,7 +6,8 @@ import { ReactComponent as IconMinus } from '../../images/icon-minus.svg';
 import { ReactComponent as IconPlus } from '../../images/icon-plus.svg';
 import { ReactComponent as IconCart } from '../../images/icon-cart.svg';
 import image from '../../images/image-product-1-thumbnail.jpg';
-import { addItem, showMessage } from '../../redux/sneakStore';
+import { addItem } from '../../redux/sneakStore';
+import Message from '../message/Message';
 
 const ProductDescription = () => {
   const [increase, setIncrease] = useState({
@@ -17,6 +18,7 @@ const ProductDescription = () => {
     oldPrice: 250,
     imageUrl: image,
   });
+  const [click, setClick] = useState(false);
   const dispatch = useDispatch();
 
   const increment = () => {
@@ -33,7 +35,8 @@ const ProductDescription = () => {
 
   const addToCart = () => {
     dispatch(addItem({ ...increase, id: uuidv4() }));
-    dispatch(showMessage(true));
+    setClick(true);
+    setTimeout(() => setClick(false), 2000);
   };
 
   return (
@@ -70,6 +73,7 @@ const ProductDescription = () => {
           <span>Add to cart</span>
         </button>
       </div>
+      <Message click={click} />
     </section>
   );
 };
