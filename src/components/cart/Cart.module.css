@@ -2,13 +2,15 @@
 
 .cartModal {
   width: 95%;
-  margin: 0 auto;
+  position: absolute;
+  margin: 10px auto;
   border: 1px solid red;
   border-radius: 10px;
-  padding: 10px 15px;
-  display: flex;
+  padding: 20px 15px;
+  display: none;
   flex-direction: column;
   gap: 10px;
+  z-index: 100;
 }
 
 .dFlex {
@@ -82,4 +84,10 @@
 
 .cartDelete {
   padding-top: 0.7em;
+}
+
+.horiLine {
+  height: 1px;
+  background-color: #e7e7e7de;
+  border: none;
 }

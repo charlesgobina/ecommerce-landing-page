@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ReactComponent as MenuIcon } from '../../images/icon-menu.svg';
 import CartButton from '../CartButton/CartButton';
 import { ReactComponent as SneakerLogo } from '../../images/logo.svg';
 import avatar from '../../images/image-avatar.png';
 import './Header.css';
 
-const Header = () => (
+const Header = ({ setDetectClick }) => (
   <header>
     <nav>
       <div className="headerLogo">
@@ -21,7 +22,7 @@ const Header = () => (
       </ul>
       <ul className="headerProfile">
         <li>
-          <CartButton />
+          <CartButton setDetectClick={setDetectClick} />
         </li>
         <li>
           <img src={avatar} alt="avatar" />
@@ -30,5 +31,9 @@ const Header = () => (
     </nav>
   </header>
 );
+
+Header.propTypes = {
+  setDetectClick: PropTypes.func.isRequired,
+};
 
 export default Header;
