@@ -8,6 +8,7 @@ const Cart = ({ detectClick }) => {
   console.log('Detect', detectClick);
   const styles = {
     display: 'flex',
+    border: '1px solid orange',
   };
 
   return (
