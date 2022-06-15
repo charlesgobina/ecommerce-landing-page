@@ -6,12 +6,12 @@ import Cart from './components/cart/Cart';
 import './App.css';
 
 const App = () => {
-  const [detectClick, setDetectClick] = useState(false);
+  const [detect, setDetect] = useState(false);
 
   return (
     <div className="App">
-      <Header setDetectClick={setDetectClick} />
-      <Cart detectClick={detectClick} />
+      <Header setDetect={setDetect} />
+      <Cart detect={detect} />
       <Card />
       <ProductDescription />
     </div>

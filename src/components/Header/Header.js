@@ -6,7 +6,7 @@ import { ReactComponent as SneakerLogo } from '../../images/logo.svg';
 import avatar from '../../images/image-avatar.png';
 import './Header.css';
 
-const Header = ({ setDetectClick }) => (
+const Header = ({ setDetect }) => (
   <header>
     <nav>
       <div className="headerLogo">
@@ -22,7 +22,7 @@ const Header = ({ setDetectClick }) => (
       </ul>
       <ul className="headerProfile">
         <li>
-          <CartButton setDetectClick={setDetectClick} />
+          <CartButton setDetect={setDetect} />
         </li>
         <li>
           <img src={avatar} alt="avatar" />
@@ -33,7 +33,7 @@ const Header = ({ setDetectClick }) => (
 );
 
 Header.propTypes = {
-  setDetectClick: PropTypes.func.isRequired,
+  setDetect: PropTypes.func.isRequired,
 };
 
 export default Header;

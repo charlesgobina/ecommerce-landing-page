@@ -2,7 +2,7 @@
 
 .cartModal {
   width: 95%;
-  position: absolute;
+  position: relative;
   margin: 10px auto;
   border: 1px solid red;
   border-radius: 10px;
@@ -31,6 +31,8 @@
   justify-content: space-between;
   flex-direction: column;
   gap: 10px;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
 .divisionTwo {
@@ -65,7 +67,7 @@
 
 .cartHeading {
   font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 1em;
   text-align: left;
 }
@@ -90,4 +92,9 @@
   height: 1px;
   background-color: #e7e7e7de;
   border: none;
+}
+
+.centerDiv {
+  width: 100%;
+  position: absolute;
 }
