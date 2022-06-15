@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import { ReactComponent as Cart } from '../../images/icon-cart.svg';
+import './CartButton.css';
 
-const CartButton = ({ setDetectClick }) => {
+const CartButton = ({ setDetect }) => {
   const handleClick = () => {
-    setDetectClick((prev) => !prev);
+    setDetect((prev) => !prev);
   };
 
   return (
@@ -14,7 +15,7 @@ const CartButton = ({ setDetectClick }) => {
 };
 
 CartButton.propTypes = {
-  setDetectClick: PropTypes.func.isRequired,
+  setDetect: PropTypes.func.isRequired,
 };
 
 export default CartButton;
