@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ReactComponent as Cart } from '../../images/icon-cart.svg';
+import { ReactComponent as Cart } from '../../images/icon-cart-head.svg';
 import './CartButton.css';
 
 const CartButton = ({ setDetect }) => {
