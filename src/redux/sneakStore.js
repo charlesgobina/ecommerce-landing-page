@@ -1,4 +1,5 @@
 const ADD_ITEM = 'itemStore/ADD_ITEM';
+const DELETE_ITEM = 'itemStore/DELETE_ITEM';
 
 const initialState = {
   item: [],
@@ -9,11 +10,20 @@ export const addItem = (payload) => ({
   payload,
 });
 
+export const deleteItem = (payload) => ({
+  type: DELETE_ITEM,
+  payload,
+});
+
 const reducer = (state = initialState, action) => {
-  if (action.type === ADD_ITEM) {
-    return { item: [...state.item, action.payload] };
+  switch (action.type) {
+    case ADD_ITEM:
+      return { item: [...state.item, action.payload] };
+    case DELETE_ITEM:
+      return { item: state.item.filter((singleItem) => singleItem.id !== action.payload) };
+    default:
+      return state;
   }
-  return state;
 };
 
 export default reducer;
