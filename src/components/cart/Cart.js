@@ -1,14 +1,17 @@
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
-import { BiTrash } from 'react-icons/bi';
 import { useSelector } from 'react-redux';
 import style from './Cart.module.css';
+import Trash from '../trash/Trash';
 
 const Cart = ({ detect }) => {
   const items = useSelector((state) => state.itemReducer.item);
+  console.log(items.length);
   const styles = {
     display: 'flex',
     border: '1px solid orange',
+    transition: 'all 0.25s',
+    scale: 1,
   };
 
   return (
@@ -42,7 +45,7 @@ const Cart = ({ detect }) => {
                           <span className={style.cartPrice}>{`$${item.price} x ${item.quantity} = $${item.price * item.quantity}`}</span>
                         </div>
                       </div>
-                      <p className={style.cartDelete}><BiTrash size={20} color="#c3cad9" /></p>
+                      <Trash id={item.id} />
                     </div>
                   ))}
                 </div>

@@ -133,6 +133,7 @@ button > span {
   font: 700 1rem 'Kumbh Sans', sans-serif;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: -2px 24px 43px -19px #ff7d1a;
 }
 
 button > #cartBtn {
