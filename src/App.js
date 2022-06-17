@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Card from './components/card/Card';
 import ProductDescription from './components/productDescription/ProductDescription';
 import Cart from './components/cart/Cart';
+import CardDesktop from './components/card/CardDesktop';
 import './App.css';
 
 const App = () => {
@@ -12,8 +13,11 @@ const App = () => {
     <div className="App">
       <Header setDetect={setDetect} />
       <Cart detect={detect} />
-      <Card />
-      <ProductDescription />
+      <main className="appMain">
+        <Card />
+        <CardDesktop />
+        <ProductDescription />
+      </main>
     </div>
   );
 };

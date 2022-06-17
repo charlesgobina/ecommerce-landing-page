@@ -13,6 +13,12 @@
   gap: 10px;
 }
 
+@media screen and (min-width: 700px) {
+  .productDescription {
+    align-items: flex-start !important;
+  }
+}
+
 .productDescription > h4 {
   align-self: flex-start;
   text-transform: uppercase;
