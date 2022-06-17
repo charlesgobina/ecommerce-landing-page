@@ -1,0 +1,20 @@
+.sneakerDesktopCarousel {
+  display: none;
+  max-height: 50%;
+  max-width: 50%;
+}
+@media screen and (min-width: 700px) {
+  .sneakerDesktopCarousel {
+    display: block;
+  }
+}
+
+.cardDesktop {
+  height: auto;
+}
+
+.cardDesktop > img {
+  max-height: inherit;
+  max-width: 100%;
+}
+
