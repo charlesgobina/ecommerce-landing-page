@@ -3,6 +3,7 @@
   max-height: 50%;
   max-width: 50%;
 }
+
 @media screen and (min-width: 700px) {
   .sneakerDesktopCarousel {
     display: block;
@@ -17,4 +18,3 @@
   max-height: inherit;
   max-width: 100%;
 }
-
