@@ -6,7 +6,6 @@ import Trash from '../trash/Trash';
 
 const Cart = ({ detect }) => {
   const items = useSelector((state) => state.itemReducer.item);
-  console.log(items.length);
   const styles = {
     display: 'flex',
     border: '1px solid orange',
