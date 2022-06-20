@@ -9,13 +9,37 @@
 }
 
 @media screen and (min-width: 700px) {
-  .App {
-    margin: 0 20px;
+  .appMain {
+    height: inherit;
+    display: flex;
+    padding: 100px 0;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0 auto;
+    gap: 40px;
   }
+}
 
+@media screen and (min-width: 1024px) {
   .appMain {
     height: inherit;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 90px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .appMain {
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    gap: 100px;
   }
 }

@@ -7,15 +7,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
   width: 100%;
   height: 100%;
   gap: 10px;
 }
 
+.productY {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
 @media screen and (min-width: 700px) {
   .productDescription {
-    align-items: flex-start !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 0;
+  }
+
+  .productY {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .productDescription {
+    max-width: 381px;
   }
 }
 
@@ -73,7 +95,7 @@
   text-decoration: line-through;
 }
 
-.productDescription > .productQuantity {
+.productDescription > .productY > .productQuantity {
   display: flex;
   align-self: flex-start;
   text-align: left;
@@ -86,7 +108,7 @@ button > span {
   background-color: transparent;
 }
 
-.productDescription > .productQuantity > span {
+.productDescription > .productY >  .productQuantity > span {
   width: 90%;
   height: 60px;
   padding: 20px 10px;
@@ -98,7 +120,7 @@ button > span {
   text-align: center;
 }
 
-.productDescription > .productQuantity > .quantityBtn {
+.productDescription > .productY >  .productQuantity > .quantityBtn {
   background-color: #f7f8fd;
   padding: 0 10px;
   height: 60px;
@@ -106,17 +128,17 @@ button > span {
   outline: none;
 }
 
-.productDescription > .productQuantity > .quantityBtnPlus {
+.productDescription > .productY >  .productQuantity > .quantityBtnPlus {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.productDescription > .productQuantity > .quantityBtnMinus {
+.productDescription > .productY >  .productQuantity > .quantityBtnMinus {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
 
-.productDescription > .productButton {
+.productDescription > .productY >  .productButton {
   display: flex;
   align-items: center;
   align-self: flex-start;

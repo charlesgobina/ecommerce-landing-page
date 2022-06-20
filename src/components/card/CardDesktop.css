@@ -1,20 +1,45 @@
 .sneakerDesktopCarousel {
   display: none;
   max-height: 50%;
-  max-width: 50%;
+  max-width: 446px;
 }
 
 @media screen and (min-width: 700px) {
   .sneakerDesktopCarousel {
     display: block;
   }
+  
+  .carousel .thumbs-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto !important;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .carousel .thumbs-wrapper > ul > li {
+    outline: none;
+    border: none;
+  }
+
+  .carousel .thumbs-wrapper > ul > li:focus {
+    outline: none;
+    border: none;
+  }
+
+  .carousel .thumbs-wrapper > ul > li:hover {
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .cardDesktop {
   height: auto;
+ 
 }
 
 .cardDesktop > img {
   max-height: inherit;
-  max-width: 100%;
+  max-width: 75vw;
 }

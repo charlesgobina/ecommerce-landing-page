@@ -58,20 +58,22 @@ const ProductDescription = () => {
           <span className="oldPrice">$250.00</span>
         </div>
       </div>
-      <div className="productQuantity">
-        <button type="button" className="quantityBtn quantityBtnMinus">
-          <IconMinus onClick={decrement} className="quantityBtnMinus" />
-        </button>
-        <span>{increase.quantity}</span>
-        <button type="button" className="quantityBtn quantityBtnPlus">
-          <IconPlus onClick={increment} className="quantityBtnPlus" />
-        </button>
-      </div>
-      <div className="productButton">
-        <button onClick={addToCart} className="productButton" type="button">
-          <IconCart id="cartBtn" />
-          <span>Add to cart</span>
-        </button>
+      <div className="productY">
+        <div className="productQuantity">
+          <button type="button" className="quantityBtn quantityBtnMinus">
+            <IconMinus onClick={decrement} className="quantityBtnMinus" />
+          </button>
+          <span>{increase.quantity}</span>
+          <button type="button" className="quantityBtn quantityBtnPlus">
+            <IconPlus onClick={increment} className="quantityBtnPlus" />
+          </button>
+        </div>
+        <div className="productButton">
+          <button onClick={addToCart} className="productButton" type="button">
+            <IconCart id="cartBtn" />
+            <span>Add to cart</span>
+          </button>
+        </div>
       </div>
       <Message click={click} />
     </section>
