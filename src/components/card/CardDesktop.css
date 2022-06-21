@@ -33,7 +33,11 @@
     cursor: pointer;
   }
 
-  .carousel .thumbs-wrapper > ul > li.thumb > img{
+  .cardDesktop > img {
+    border-radius: 30px;
+  }
+
+  .carousel .thumbs-wrapper > ul > li.thumb > img {
     outline: none;
     border-radius: 20px;
   }
@@ -52,10 +56,6 @@
     outline: none;
     border: none;
     cursor: pointer;
-  }
-
-  .cardDesktop > img {
-    border-radius: 30px;
   }
 
   .cardDesktop {
