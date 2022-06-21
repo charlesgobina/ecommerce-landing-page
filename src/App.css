@@ -16,6 +16,12 @@
     align-items: flex-start;
     width: 95%;
     margin: 0 auto;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .appMain {
     gap: 40px;
   }
 }

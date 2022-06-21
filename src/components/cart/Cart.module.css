@@ -4,7 +4,6 @@
   width: 95%;
   position: relative;
   margin: 10px auto;
-  border: 1px solid red;
   border-radius: 10px;
   padding: 20px 15px;
   display: none;
@@ -13,19 +12,58 @@
   flex-direction: column;
   gap: 10px;
   z-index: 100;
-  box-shadow: 4px 3px 6px #2e2e2e;
+  box-shadow: 1px 5px 15px 4px #2e2e2e9a;
+}
+
+@media screen and (min-width: 700px) {
+  div.centerDiv {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    z-index: 3;
+    background-color: transparent;
+  }
+
+  .cartModal {
+    margin: 0 auto;
+    max-width: 330px !important;
+    text-align: right;
+    grid-column: 7/13;
+    border: none;
+    color: #717982;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cartModal {
+    grid-column: 8/12;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .cartModal {
+    text-align: right;
+    grid-column: 7/11;
+  }
 }
 
 .dFlex {
   display: flex;
   gap: 5px;
   grid-column: 1/4;
+  width: 250px;
 }
 
 .dFlexPrice {
   display: flex;
   gap: 5px;
+  width: 210px;
   flex-direction: column;
+}
+
+.dFlexPrice > h2 {
+  align-self: flex-start;
+  text-align: left;
 }
 
 .division {
@@ -35,7 +73,6 @@
   flex-direction: column;
   gap: 10px;
   max-height: 400px;
-  overflow-y: scroll;
 }
 
 .divisionTwo {

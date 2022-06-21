@@ -8,7 +8,6 @@ const Cart = ({ detect }) => {
   const items = useSelector((state) => state.itemReducer.item);
   const styles = {
     display: 'flex',
-    border: '1px solid orange',
     transition: 'all 0.25s',
     scale: 1,
   };

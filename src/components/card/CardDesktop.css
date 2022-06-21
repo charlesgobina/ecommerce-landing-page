@@ -9,6 +9,10 @@
     display: block;
   }
 
+  .sneakerDesktopCarousel > div.carousel.carousel-slider {
+    border-radius: 30px !important;
+  }
+
   .carousel .thumbs-wrapper {
     display: flex;
     justify-content: center;
@@ -17,20 +21,45 @@
     width: 100%;
   }
 
-  .carousel .thumbs-wrapper > ul > li {
+  .carousel .thumbs-wrapper > ul > li.thumb {
     outline: none;
-    border: none;
+    width: 100px !important;
+    border-radius: 20px;
   }
 
-  .carousel .thumbs-wrapper > ul > li:focus {
-    outline: none;
-    border: none;
-  }
-
-  .carousel .thumbs-wrapper > ul > li:hover {
+  .carousel .thumbs-wrapper > ul > li.thumb:hover {
     outline: none;
     border: none;
     cursor: pointer;
+  }
+
+  .carousel .thumbs-wrapper > ul > li.thumb > img{
+    outline: none;
+    border-radius: 20px;
+  }
+
+  .carousel .thumbs-wrapper > ul > li.selected {
+    border: 3px solid #f97d1c;
+    opacity: 60%;
+  }
+
+  .carousel .thumbs-wrapper > ul > li.selected:focus {
+    outline: none;
+    border: none;
+  }
+
+  .carousel .thumbs-wrapper > ul > li.selected:hover {
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cardDesktop > img {
+    border-radius: 30px;
+  }
+
+  .cardDesktop {
+    border-radius: 30px;
   }
 }
 

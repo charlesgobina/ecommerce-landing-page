@@ -24,9 +24,43 @@
   .productDescription {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
     height: auto;
     padding: 0;
+  }
+
+  .productDescription > .productY > .productQuantity > .quantityBtn {
+    max-width: 125px;
+    border-radius: 2px;
+  }
+
+  .productDescription > .productY > .productButton {
+    max-width: 230px;
+    border-radius: 30px;
+  }
+
+  .productDescription > h4 {
+    font-size: 0.9rem !important;
+    font-weight: bolder !important;
+  }
+
+  .productDescription > h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .productY {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .productDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    padding: 40px 0;
   }
 
   .productY {
@@ -38,6 +72,8 @@
 @media screen and (min-width: 1024px) {
   .productDescription {
     max-width: 381px;
+    gap: 30px;
+    padding: 40px 0;
   }
 }
 
@@ -128,6 +164,10 @@ button > span {
   outline: none;
 }
 
+.productDescription > .productY > .productQuantity > .quantityValue {
+  font-weight: bolder;
+}
+
 .productDescription > .productY > .productQuantity > .quantityBtnPlus {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
@@ -160,8 +200,13 @@ button > span {
   color: #fff;
   font: 700 1rem 'Kumbh Sans', sans-serif;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: -2px 24px 43px -19px #ff7d1a;
+}
+
+.productButton > button:hover {
+  opacity: 70%;
+  transition: all 0.25s;
 }
 
 button > #cartBtn {

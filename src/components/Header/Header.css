@@ -14,9 +14,13 @@ nav {
   padding: 20px 10px;
 }
 
+hr {
+  display: none;
+}
+
 .headerLogo {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
 }
 
@@ -45,11 +49,35 @@ nav {
   nav {
     width: 95%;
     margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .headerProfile > li > img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  hr.headerLine {
+    display: block;
+    width: 92%;
+    margin: 0 auto;
+    height: 1px;
+    border: none;
+    background-color: #f1f1f1b7;
+  }
+
+  .headerLogo {
+    gap: 40px;
   }
 
   .headerMenuIcon {
     display: none;
+  }
+
+  .headerProfile {
+    align-self: flex-end !important;
   }
 
   .headerLinks {
@@ -57,16 +85,33 @@ nav {
     gap: 10px;
     align-items: flex-start;
   }
+
+  .headerLinks > li {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #69707d;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .headerProfile {
+    gap: 40px;
+  }
+
   nav {
     width: 85%;
+  }
+
+  hr.headerLine {
+    width: 83%;
   }
 }
 
 @media screen and (min-width: 1400px) {
   nav {
     width: 60%;
+  }
+
+  hr.headerLine {
+    width: 59%;
   }
 }

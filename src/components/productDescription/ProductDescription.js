@@ -63,7 +63,7 @@ const ProductDescription = () => {
           <button type="button" className="quantityBtn quantityBtnMinus">
             <IconMinus onClick={decrement} className="quantityBtnMinus" />
           </button>
-          <span>{increase.quantity}</span>
+          <span className="quantityValue">{increase.quantity}</span>
           <button type="button" className="quantityBtn quantityBtnPlus">
             <IconPlus onClick={increment} className="quantityBtnPlus" />
           </button>
