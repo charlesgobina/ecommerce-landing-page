@@ -10,7 +10,7 @@ const Trash = ({ id }) => {
     dispatch(deleteItem(id));
   };
   return (
-    <BiTrash onClick={removeItem} className={style.cartDelete} size={35} color="#c3cad9" />
+    <BiTrash onClick={removeItem} className={style.cartDelete} size={30} color="#c3cad9" />
   );
 };
 

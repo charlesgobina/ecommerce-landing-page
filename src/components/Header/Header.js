@@ -12,14 +12,15 @@ const Header = ({ setDetect }) => (
       <div className="headerLogo">
         <MenuIcon className="headerMenuIcon" size={30} />
         <SneakerLogo className="header" />
+        <ul className="headerLinks">
+          <li>Collection</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </div>
-      <ul className="headerLinks">
-        <li>Collection</li>
-        <li>Men</li>
-        <li>Women</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+
       <ul className="headerProfile">
         <li>
           <CartButton setDetect={setDetect} />
@@ -29,6 +30,7 @@ const Header = ({ setDetect }) => (
         </li>
       </ul>
     </nav>
+    <hr className="headerLine" />
   </header>
 );
 
