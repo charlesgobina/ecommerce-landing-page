@@ -49,6 +49,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Anuar Shaidenov](https://charlesgobina.github.io/my-portfolio/)
-- Frontend Mentor - [@anuarshaidenov](https://www.frontendmentor.io/profile/charlesgobina)
-- Twitter - [@anuarnyi](https://www.twitter.com/charles_gobina)
+- Website - [Charles Gobina](https://charlesgobina.github.io/my-portfolio/)
+- Frontend Mentor - [@charlesgobina](https://www.frontendmentor.io/profile/charlesgobina)
+- Twitter - [@charles_gobina](https://www.twitter.com/charles_gobina)
