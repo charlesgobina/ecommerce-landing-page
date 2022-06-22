@@ -1,0 +1,215 @@
+* {
+  background-color: #fff;
+}
+
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 60px 20px;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.productY {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .productDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: auto;
+    padding: 0;
+  }
+
+  .productDescription > .productY > .productQuantity > .quantityBtn {
+    max-width: 125px;
+    border-radius: 2px;
+  }
+
+  .productDescription > .productY > .productButton {
+    max-width: 230px;
+    border-radius: 30px;
+  }
+
+  .productDescription > h4 {
+    font-size: 0.9rem !important;
+    font-weight: bolder !important;
+  }
+
+  .productDescription > h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .productY {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .productDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .productY {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .productDescription {
+    max-width: 381px;
+    gap: 30px;
+    padding: 40px 0;
+  }
+}
+
+.productDescription > h4 {
+  align-self: flex-start;
+  text-transform: uppercase;
+  font: 500 1rem 'Kumbh Sans', sans-serif;
+  color: #f97d1c;
+}
+
+.productDescription > h2 {
+  align-self: flex-start;
+  text-transform: capitalize;
+  font: 700 2rem 'Kumbh Sans', sans-serif;
+  text-align: left;
+}
+
+.productDescription > p {
+  align-self: flex-start;
+  font: 400 1rem 'Kumbh Sans', sans-serif;
+  text-align: left;
+  color: #717982;
+}
+
+.productDescription > .productPrice {
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productPrice > .productPriceNew {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.productPrice > .productPriceNew > .newPrice {
+  font: 700 2rem 'Kumbh Sans', sans-serif;
+}
+
+.productPrice > .productPriceNew > .pricePercentage {
+  font: 700 1rem 'Kumbh Sans', sans-serif;
+  background-color: #feede0;
+  color: #f97d1c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.productPrice > .productPriceOld > .oldPrice {
+  font: 700 1rem 'Kumbh Sans', sans-serif;
+  color: #71798291;
+  text-decoration: line-through;
+}
+
+.productDescription > .productY > .productQuantity {
+  display: flex;
+  align-self: flex-start;
+  text-align: left;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button > span {
+  background-color: transparent;
+}
+
+.productDescription > .productY > .productQuantity > span {
+  width: 90%;
+  height: 60px;
+  padding: 20px 10px;
+  font: 400 1rem 'Kumbh Sans', sans-serif;
+  color: #717982;
+  border: none;
+  outline: none;
+  background-color: #f7f8fd;
+  text-align: center;
+}
+
+.productDescription > .productY > .productQuantity > .quantityBtn {
+  background-color: #f7f8fd;
+  padding: 0 10px;
+  height: 60px;
+  border: none;
+  outline: none;
+}
+
+.productDescription > .productY > .productQuantity > .quantityValue {
+  font-weight: bolder;
+}
+
+.productDescription > .productY > .productQuantity > .quantityBtnPlus {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.productDescription > .productY > .productQuantity > .quantityBtnMinus {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.productDescription > .productY > .productButton {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  text-align: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.productButton > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #f97d1c;
+  color: #fff;
+  font: 700 1rem 'Kumbh Sans', sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: -2px 24px 43px -19px #ff7d1a;
+}
+
+.productButton > button:hover {
+  opacity: 70%;
+  transition: all 0.25s;
+}
+
+button > #cartBtn {
+  background-color: transparent;
+  color: #fff;
+}
