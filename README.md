@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/ecommerce-product-page-with-react-and-redux-oOic6SqiS)
-- Live Site URL: [Live Demo](https://stately-kitten-dd7ccb.netlify.app/)
+- Live Site URL: [Live Demo](https://clever-alfajores-106503.netlify.app/)
 
 ## My process
 
